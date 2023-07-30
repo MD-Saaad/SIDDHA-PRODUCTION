@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "poopins", sans-serif;
+}
+
+nav {
+    background: rgb(0, 0, 0);
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+nav a {
+    color: #fff;
+    transition: all 0.3s ease;
+
+}
+
+nav a:hover{
+    color: rgb(213, 228, 14);
+    padding-right: 6px;
+}
+
+
+.logo {
+    flex: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover{
+    color: #fff;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px ;
+}
+
+.logo1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.logo1 img {
+
+    width: 350px;
+
+}
+
+hr{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 80px;
+
+}
+
+.footer{
+    background: black;
+    padding: 70px 0;
+    color: #fff;
+    
+}
+
+.row {
+    display: flex;
+    
+    justify-content: space-between;
+    
+}
+
+.footer-col{
+    width: 25%;
+    padding: 50px 15px;
+    
+
+}
+
+.footer-col h4{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: normal;
+    position: relative;
+
+}
+
+
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: yellow;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul{
+    list-style: none;
+    
+}
+
+.footer-col ul li a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    display: block;
+    padding-top: 15px;
+    transition: all .3s ease;
+}
+
+
+
+.footer-col ul li a:hover{
+    color: rgb(210, 243, 24);
+    padding-left: 6px;
+}
+
+.copy p{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 40px;
+    
+}
+
+.copy p:hover{
+    color: rgb(241, 33, 33);
+    transition: all .3s ease-out;
+    
+}
+
+
+
+
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+    
+}
+
+.menu li a{
+    text-decoration: none;
+}
+
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
+    
+
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and  (max-width: 600px) {
+  nav{
+    display: flex;
+    position: relative;
+    padding: 15px 20px;
+
+  }
+
+  .menu{
+    margin-top: 15px;
+    display: none;
+  }
+
+
+  .menu.active, .toggle{
+    display: block;
+  }
+
+  .toggle{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+
+}

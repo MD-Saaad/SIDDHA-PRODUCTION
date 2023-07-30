@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddha navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="Logo 1.png" alt="Logo"></a>
+        </div>
+        <div class="toggle">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="footer">
+
+        <div class="logo1">
+            <img src="siddha FOOTER LOGO.png" alt="logo">
+        </div>
+
+        <div class="line">
+            <hr> 
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Reach us</h4>
+                    <ul>
+                        <li><a href="#"><ion-icon name="call-outline"></ion-icon>  +91 9699735163</a></li>
+                        <li><a href="#"><ion-icon name="mail-outline"></ion-icon>  inquarysiddhaproduction@gmail.com</a></li>
+                        <li><a href="#"><ion-icon name="home-outline"></ion-icon>  Pushpak Society Flat No.A1106 Moshi Alandi Road <br> Dodulgoan Pimpri-Chinchwad</a></li>
+                        
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4 class="legal">Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Security</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Copyright &#169 <br> SIDDHA ANIMATION PRODUCTION</p> 
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+               if($(".menu").hasClass("active")){
+                $(".menu").removeClass("active");
+                $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+
+               } else {
+                $(".menu").addClass("active");
+                $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+
+               }        
+            });
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
