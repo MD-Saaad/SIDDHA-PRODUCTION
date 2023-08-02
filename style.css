@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+/* css for header  */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poopins",sans-serif;
 
 }
 
 body {
     font-family: "poopins", sans-serif;
+    background: black;
+
 }
 
 nav {
@@ -16,18 +19,26 @@ nav {
     padding: 5px 20px;
     display: flex;
     align-items: center;
+    
 }
 
 
 nav a {
     color: #fff;
     transition: all 0.3s ease;
+    padding-right: 30px;
+    
 
 }
 
 nav a:hover{
     color: rgb(213, 228, 14);
     padding-right: 6px;
+}
+
+.fa {
+    color: #fff;
+    padding-right: 5px;
 }
 
 
@@ -46,9 +57,136 @@ nav a:hover{
 }
 
 .logo img {
-    width: 60px;
+    width: 80px;
     margin-right: 10px ;
 }
+
+.design{
+
+    text-align: center;
+    color: #fff;
+    
+
+}
+
+/* css for video page  */
+
+
+
+     
+
+.cartoon{
+
+    
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        padding: 400px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+}
+
+.cartoontext {
+
+        text-align: center;
+        font-size: 4vw;
+        color: #FFD700;
+        line-height: 20vh;
+        transition: all 0.3s ease;    
+}
+
+.cartoontext:hover{
+
+    background: linear-gradient(
+        to right, #ca4321, #ff6b08,
+         #49ce28, #4488ee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+        padding-top: 6px;
+}
+
+.cartoonimg{
+    margin: 0px;
+}
+
+#cartoonimg1{
+    
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: -125px;
+    left: -30px;
+    width: 30vw;
+    
+}
+
+#cartoonimg2{
+    
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    bottom: -17vh;
+    right: -4vw;
+    width: 25vw;
+    
+}
+
+.imagination {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    align-items: center;
+    padding: 400px 40px;
+}
+
+.imagination h5{
+    text-align: center;
+    color: aliceblue;
+    align-items: center;
+    font-size:  2vw;
+    background: linear-gradient(
+            to right, #cfcc12, #ff6b08,
+             #eaee11, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+}
+
+.imagination h3{
+    
+    text-align: center;
+    color: aliceblue;
+    font-size: 6vw;
+    word-spacing: 20px;
+    font-family: "poppins",sans-serif;
+    background: linear-gradient(
+            to right, #cfcc12, #ff6b08,
+             #eaee11, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    
+
+}
+
+.create{
+    padding-top: 100px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* css for footer  */
 
 .logo1 {
     display: flex;
@@ -186,6 +324,14 @@ hr{
     font-size: 16px;
     
 
+}
+
+.contactus {
+    text-align: center;
+    border: 2px solid #FFD700;
+    border-radius: 30px;
+    padding: 10px 10px;
+    
 }
 
 .toggle{
